@@ -1,0 +1,100 @@
+.lines-framework {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 110;
+  transition: right .5s cubic-bezier(.165,.84,.44,1);
+}
+
+.lines-framework--is-anim 
+
+.lines-framework__line {
+	position: absolute;
+	background-color: hsla(0,0%,75%,.9);
+  transition: top 2.4s cubic-bezier(.165,.84,.44,1),transform 2.6s cubic-bezier(.77,0,.175,1),background .4s cubic-bezier(.165,.84,.44,1),-webkit-transform 2.6s cubic-bezier(.77,0,.175,1);
+}
+
+.lines-framework__top-1 {
+	width: 100%;
+	height: 1px;
+	top: 52px;
+	animation-name: slideInFromLeft;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(.77,0,.175,1);
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
+.lines-framework__top-2 {
+	width: 100%;
+	height: 1px;
+	top: 104px;
+	animation-name: slideInFromRight;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(.165,.84,.44,1);
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
+.lines-framework__left {
+	width: 1px;
+	height: 100%;
+	left: 52px;
+	animation-name: slideInFromBottom;
+	animation-duration: 0.75s;
+	animation-timing-function: cubic-bezier(.165,.84,.44,1);
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
+.lines-framework__right {
+	width: 1px;
+	height: 100%;
+	right: 52px;
+	animation-name: slideInFromTop;
+	animation-duration: 0.75s;
+	animation-timing-function: cubic-bezier(.165,.84,.44,1);
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

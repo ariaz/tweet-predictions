@@ -1,0 +1,130 @@
+.navigation_menu_container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.navigation_menu_button {
+  height: 52px;
+  width: 100%;
+  cursor: pointer;
+  border-right: 1px solid hsla(0,0%,75%,.9);
+  transition: all 0.3s ease-out;
+  box-sizing: border-box;
+}
+
+.navigation_menu_button:click .navigation_menu_body {display: block;}
+
+.navigation_menu_container.navigation_menu_button:last-child {
+    border-right: 0px
+  }
+
+.navigation_menu_button:hover {
+  background-color: black;
+  color: white;
+}
+
+.navigation_menu_button.selected {
+  background-color: black;
+  color: white;
+}
+
+.navigation_menu_body {
+  display: none;
+  position: absolute;
+  top: 52px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: auto;
+  background-color: black;
+  opacity: 1;
+}
+
+.navigation_menu_body.selected {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center
+}
+
+.navigation_menu_item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  font-family: Lucida Grande;
+  width: 100%;
+  font-size: 19px;
+  color: #ccc;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  transition: all .6665s cubic-bezier(.77,0,.175,1) .5199s;
+  transition: background-color .333s ease-out;
+  
+}
+
+img .navigation_menu_item {
+  fill:none;stroke:#ccc;stroke-miterlimit:10;stroke-width:2.26px;
+}
+
+.navigation_menu_item:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+
+.navigation_menu_item:hover .svg_menu_item {
+  fill: black;
+  stroke: none;    
+}
+
+.cls-1{fill:none;stroke:#ccc;stroke-miterlimit:10;stroke-width:2.26px;}
+
+.title {
+  display: block;
+  text-align: center;
+  font-family: Lucida Grande;
+  font-size: 14px;
+  line-height: 52px;
+  text-transform: uppercase;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+ }
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  padding-bottom: 15px;
+}
+
+.productImage .path:hover {
+  stroke: red;
+}
+
+ @keyframes fadeIn {
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+.toggleMenu {
+  display: block;
+  top: 52px;
+  left:0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: red;
+ }

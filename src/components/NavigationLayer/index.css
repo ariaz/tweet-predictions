@@ -1,0 +1,13 @@
+.menu-layer-container {
+  left:52px;
+  right: 52px;
+  top: 52px;
+  bottom: 52px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 104px);
+  align-items: space-between;
+  box-sizing: border-box;
+  justify-content: space-between;
+}

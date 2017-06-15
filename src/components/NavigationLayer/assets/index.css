@@ -1,0 +1,11 @@
+.svg_menu_item {
+	fill: none;
+	stroke: #ccc;
+	width: 150px;
+	height: 150px;
+}
+
+/*.svg_menu_item:hover {
+	fill: black;
+	stroke: none;
+}*/
